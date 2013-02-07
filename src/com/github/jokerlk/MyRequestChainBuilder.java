@@ -17,6 +17,8 @@ public class MyRequestChainBuilder {
 				prev.setNext(next);
 				prev = next;
 			}
+		} else {
+			throw new IllegalArgumentException("Null or void parameter!!!");
 		}
 	}
 	
